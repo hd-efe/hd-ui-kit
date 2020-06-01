@@ -1,13 +1,26 @@
 {
-  "name": "hd-ui",
+  "name": "hd-ui-kit",
   "version": "0.1.0",
   "private": false,
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name index --dest package components/index.js"
+    "lib": "vue-cli-service build --target lib --name index --dest package components/index.js",
+    "release": "npm run build && node release.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hd-efe/hdui"
+  },
+  "keywords": [
+    "ui",
+    "hd",
+    "hundun",
+    "vue"
+  ],
+  "author": "maixiaojie",
+  "homepage": "https://hd-efe.github.io/hdui/",
   "files": [
     "components",
     "package"
@@ -17,6 +30,7 @@
   "dependencies": {
     "better-scroll": "^1.15.2",
     "core-js": "^3.6.5",
+    "gh-pages": "^3.0.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
