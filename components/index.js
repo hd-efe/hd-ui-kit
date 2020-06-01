@@ -1,7 +1,14 @@
 import Btn from './Btn/index'
-
+import Button from './button/index'
+import Course from './course/index'
+import Live from './live/index'
+import Slide from './slide/index'
 const components = [
-    Btn
+    Btn,
+    Button,
+    Course,
+    Live,
+    Slide
 ]
 
 function install(Vue) {
@@ -14,5 +21,9 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
     install,
-    Btn
+    Btn,
+    Button,
+    Course,
+    Live,
+    Slide
 }
